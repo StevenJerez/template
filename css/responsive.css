@@ -161,9 +161,12 @@
         margin-right: 15px;
         margin-top: 23px;
     }
+    .header-nav-actions {
+      transform: none;
+    }
     body .navbar-default .navbar-toggle {
         float: left;
-        margin-top: 28px;
+        /* margin-top: 28px; */
     }
     body .navbar-header {
         text-align: center;
@@ -368,7 +371,7 @@
         -webkit-perspective: 0px;
         perspective: 0px;
     }
-    .menu-wrapper, 
+    .menu-wrapper,
     .menu-wrapper > div,
     .menu-wrapper > div > div {
         position: relative;
@@ -377,12 +380,12 @@
     }
     .menu-wrapper > div > div{
         margin-bottom: 10px;
-        box-shadow: 
-            inset 0 0 0 16px #fff, 
-            inset 0 0 0 17px #e6b741, 
-            inset 0 0 0 18px #fff, 
-            inset 0 0 0 19px #e6b741, 
-            inset 0 0 0 20px #fff, 
+        box-shadow:
+            inset 0 0 0 16px #fff,
+            inset 0 0 0 17px #e6b741,
+            inset 0 0 0 18px #fff,
+            inset 0 0 0 19px #e6b741,
+            inset 0 0 0 20px #fff,
             inset 0 0 0 21px #e6b741,
             0 3px 5px rgba(0,0,0,0.2);
     }

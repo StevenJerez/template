@@ -3155,7 +3155,7 @@ footer .widget-title {
     font-weight: bold;
 }
 .footer-logo > img {
-    max-width: 200px;
+    max-width: 100%;
 }
 footer p {
     color: #ffffff;
@@ -5868,6 +5868,20 @@ q {
 .instagram_group img {
   width: 100%;
 }
+.post-thumbnail,
+.effect-lexi {
+  width: 100%;
+}
+.no-p {
+  padding: 0;
+}
+.section-bg {
+  background-size: cover;
+  background-position: center;
+}
+.navbar-auto {
+  margin-left: 30px;
+}
 @media screen and (max-width: 991px) {
   .main-menu {
     position: static;
@@ -5881,5 +5895,28 @@ q {
   }
   .main-menu .col-md-3 img{
     width: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .auto-center {
+    text-align: center !important;
+  }
+  .footer-right .title {
+    margin-top: 16px;
+  }
+  .main-menu .col-md-9 {
+    display: flex;
+    padding: 20px;
+  }
+  .main-menu::after {
+    background: transparent !important;
+  }
+  .new-nav {
+    position: absolute;
+      z-index: 100;
+      width: 100%;
+      text-align: right;
+      right: 0px;
+      background: rgb(224, 185, 28);
   }
 }
