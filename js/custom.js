@@ -6,11 +6,11 @@ File name:          Custom JS
 "use strict";
 
 
-jQuery(window).on("load", function() { // makes sure the whole site is loaded
-    jQuery('#preloader').delay(350).hide('slow'); // will fade out the white DIV that covers the website.
-    jQuery('body').addClass('page-loaded'); // will fade out the white DIV that covers the website.
-    jQuery('.amaezi-page-loader').delay(350).hide('slow'); // will fade out the white DIV that covers the website.
-});  
+// jQuery(window).on("load", function() { // makes sure the whole site is loaded
+//     jQuery('#preloader').delay(350).hide('slow'); // will fade out the white DIV that covers the website.
+//     jQuery('body').addClass('page-loaded'); // will fade out the white DIV that covers the website.
+//     jQuery('.amaezi-page-loader').delay(350).hide('slow'); // will fade out the white DIV that covers the website.
+// });
 
 
 jQuery( document ).ready(function() {
@@ -18,13 +18,13 @@ jQuery( document ).ready(function() {
 
 
 
-    /* 
+    /*
     ###############################################
     FANCY TABS
-    ############################################### 
+    ###############################################
     */
     function extend( a, b ) {
-        for( var key in b ) { 
+        for( var key in b ) {
             if( b.hasOwnProperty( key ) ) {
                 a[key] = b[key];
             }
@@ -84,12 +84,12 @@ jQuery( document ).ready(function() {
         new CBPFWTabs( el );
     });
 
-    
 
-    /* 
+
+    /*
     ###############################################
     SET SECTION BACKGROUND
-    ############################################### 
+    ###############################################
     */
     var list = document.getElementsByClassName('section-bg');
 
@@ -99,10 +99,10 @@ jQuery( document ).ready(function() {
     }
 
 
-    /* 
+    /*
     ###############################################
     Bootstrap Carousel Touch Slider.
-    ############################################### 
+    ###############################################
     */
     $.fn.bsTouchSlider = function ( options ) {
         var carousel = jQuery( ".carousel" );
@@ -131,7 +131,7 @@ jQuery( document ).ready(function() {
                 var $animatingElems = jQuery( e.relatedTarget ).find( "[data-animation ^= 'animated']" );
                 doAnimations( $animatingElems );
             } );
-            //swipe initial 
+            //swipe initial
             jQuery( ".carousel .carousel-inner" ).swipe( {
                 swipeLeft: function ( event, direction, distance, duration, fingerCount ) {
                     this.parent( ).carousel( 'next' );
@@ -147,10 +147,10 @@ jQuery( document ).ready(function() {
 
     jQuery('#bootstrap-touch-slider').bsTouchSlider();
 
-    /* 
+    /*
     ###############################################
     BOOKING SUPER PLACEHOLDERS
-    ############################################### 
+    ###############################################
     */
     //Add Super placeholder text for booking email field
     if (jQuery( "#contactEmail" ).length) {
@@ -187,19 +187,19 @@ jQuery( document ).ready(function() {
     }
 
 
-    /* 
+    /*
     ###############################################
     SLIDING MENU
-    ############################################### 
+    ###############################################
     */
     jQuery('.sliding-menu').removeClass('hidden');
 
 
 
-    /* 
+    /*
     ###############################################
     Video YT Header
-    ############################################### 
+    ###############################################
     */
     /*Begin: Video YT */
     function mobilecheck() {
@@ -223,13 +223,13 @@ jQuery( document ).ready(function() {
                     }else{
                         if(jQuery('.sound').hasClass('on')){
                             jQuery('.sound').removeClass('on');
-                            jQuery('.player').muteYTPVolume();    
+                            jQuery('.player').muteYTPVolume();
                             jQuery('.sound').addClass('off');
                             jQuery('.title').fadeIn();
                             jQuery('.travelogue-icon-sound').removeClass('fa-volume-up');
                             jQuery('.travelogue-icon-sound').addClass('fa-volume-off');
                         }
-                    }           
+                    }
                 });
             }
         });
@@ -241,10 +241,10 @@ jQuery( document ).ready(function() {
 
 
 
-    /* 
+    /*
     ###############################################
     Bootstrap tooltip
-    ############################################### 
+    ###############################################
     */
     /*Begin: tooltip */
     jQuery(function () {
@@ -253,10 +253,10 @@ jQuery( document ).ready(function() {
     /*End: tooltip */
 
 
-    /* 
+    /*
     ###############################################
     Swipebox Gallery
-    ############################################### 
+    ###############################################
     */
     /*Begin: Swipebox */
     if (jQuery( ".swipebox" ).length) {
@@ -265,10 +265,10 @@ jQuery( document ).ready(function() {
     /*End: Swipebox */
 
 
-    /* 
+    /*
     ###############################################
     SLIDERS
-    ############################################### 
+    ###############################################
     */
     /*Begin: clients slider*/
     jQuery(".clients_slider_4_columns").owlCarousel({
@@ -335,14 +335,14 @@ jQuery( document ).ready(function() {
         items           : 4
     });
 
-    /* 
+    /*
     ###############################################
     TOGGLE MENUS
-    ############################################### 
+    ###############################################
     */
     var accordionsMenu = jQuery('.theme-accordion-menu');
     if( accordionsMenu.length > 0 ) {
-        
+
         accordionsMenu.each(function(){
             var accordion = jQuery(this);
             //detect change in the input[type="checkbox"] value
@@ -355,10 +355,10 @@ jQuery( document ).ready(function() {
 
 
 
-    /* 
+    /*
     ###############################################
     Mailchimp subscribe form
-    ############################################### 
+    ###############################################
     */
     jQuery('.subscribe').ketchup().submit(function(evt) {
         evt.preventDefault();
@@ -386,10 +386,10 @@ jQuery( document ).ready(function() {
     //End: MailChimp JS
 
 
-    /* 
+    /*
     ###############################################
     One Page Scrolling
-    ############################################### 
+    ###############################################
     */
     jQuery(function(){
       jQuery.scrollIt({
@@ -405,10 +405,10 @@ jQuery( document ).ready(function() {
 
 
 
-    /* 
+    /*
     ###############################################
     LOVE POST - GALLERY
-    ############################################### 
+    ###############################################
     */
     jQuery( ".love-post .fa-heart-o" ).on( "click", function() {
         jQuery(this).parent('.love-post').find('.fa-heart').fadeIn('slow');
@@ -419,10 +419,10 @@ jQuery( document ).ready(function() {
     //End: LOVE POST FEATURE
 
 
-    /* 
+    /*
     ###############################################
     Smooth scrolling js
-    ############################################### 
+    ###############################################
     */
     // jQuery( 'a[href*="#"]:not([href="#"])' ).on( "click", function() {
     //     if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
@@ -436,7 +436,7 @@ jQuery( document ).ready(function() {
     //         }
     //     }
     // });
-    jQuery(window).scroll(function() {    
+    jQuery(window).scroll(function() {
         var scroll = jQuery(window).scrollTop();
 
          //>=, not <=
@@ -449,10 +449,10 @@ jQuery( document ).ready(function() {
 
 
 
-    /* 
+    /*
     ###############################################
     Validate and Submit contact form via Ajax
-    ############################################### 
+    ###############################################
     */
     jQuery(".submit-contact").validate({
         //Ajax validation rules
@@ -495,10 +495,10 @@ jQuery( document ).ready(function() {
 
 
 
-    /* 
+    /*
     ###############################################
     mb_YTPlayer js
-    ############################################### 
+    ###############################################
     */
     if ( jQuery( ".youtube-player" ).length ) {
         if ( !mobilecheck() ) {
@@ -517,7 +517,7 @@ jQuery( document ).ready(function() {
                         }else{
                             if(jQuery('.sound').hasClass('on')){
                                 jQuery('.sound').removeClass('on');
-                                jQuery('.player').muteYTPVolume();    
+                                jQuery('.player').muteYTPVolume();
                                 jQuery('.sound').addClass('off');
                                 jQuery('.title').fadeIn();
                                 jQuery('.icon-sound').removeClass('fa-volume-up');
@@ -556,5 +556,5 @@ jQuery( document ).ready(function() {
 
     /* Animate */
     jQuery('.animateIn').animateIn();
-    
+
 });
