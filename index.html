@@ -44,11 +44,11 @@
 <!-- BODY -->
 <body class="home" id="body">
     <!-- PAGE LOADER -->
-    <!-- <div class="amaezi-page-loader">
+    <div class="amaezi-page-loader">
         <div id="loader-wrapper">
             <div id="loader"></div>
         </div>
-    </div> -->
+    </div>
 
     <div class="main-menu">
         <div class="container">
@@ -204,6 +204,8 @@
         <section class="high-padding section-bg bg-gray">
             <div class="container">
                 <!-- TITLE + SUBTITLE section -->
+                <div class="relative section-header">
+                </div>
                 <div class="row">
                     <div class="col-md-5 text-left">
                         <div class="spacer_10"></div>
@@ -402,7 +404,7 @@
                             </div>
                         </form>
                         </div>
-                        <div class="col-md-6 feedback">
+                        <div class="col-md-6">
                           <div class="purple-title text-left">Website Feedback</div>
                           <div class="spacer_20"></div>
                           <img src="img/assets/poll.png" alt="">
@@ -569,32 +571,14 @@
         $('.funders-slide').slick({
           slidesToShow: 5,
           arrows: true,
-          autoPlay: true,
           prevArrow: '<button class="slick-prev slick-arrow icon-arrow-left" aria-label="Previous" type="button">left</button>',
           nextArrow: '<button class="slick-next slick-arrow icon-arrow-right" aria-label="Previous" type="button">right</button>',
-          responsive: [
-          {
-          breakpoint: 600,
-          settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-          }
-          },
-          {
-          breakpoint: 480,
-          settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false
-          }
-          }
-          ]
         });
       });
 
       $('.alternative-slide').slick({
         slidesToShow: 1,
-        autoplay: true,
+        autoPlay: true,
         dots: true
       });
     </script>

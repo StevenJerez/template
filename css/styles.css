@@ -5828,7 +5828,7 @@ a.viewdetails:hover,
   display: flex;
 }
 .inner-menu .logoImg {
-  width: 70%;
+  width: 60%;
 }
 .titleh2 {
   font-weight: 400;
@@ -5896,9 +5896,6 @@ q {
   .main-menu .col-md-3 img{
     width: 50px;
   }
-  .feedback {
-    margin-top: 3em;
-  }
 }
 @media screen and (max-width: 768px) {
   .auto-center {
@@ -5910,7 +5907,6 @@ q {
   .main-menu .col-md-9 {
     display: flex;
     padding: 20px;
-    position: static;
   }
   .main-menu::after {
     background: transparent !important;
@@ -5919,9 +5915,8 @@ q {
     position: absolute;
       z-index: 100;
       width: 100%;
-      text-align: left;
+      text-align: right;
       right: 0px;
-      top: 90px;
-      background: rgba(255, 254, 254, 0.85);
+      background: rgb(224, 185, 28);
   }
 }
