@@ -1750,6 +1750,7 @@ footer .widget_nav_menu .menu {
     display: block;
     font-size: 18px;
     width: 100%;
+    font-weight: bold;
 }
 .widget_recent_entries_with_thumbnail .post-date {
     font-size: 13px;
@@ -2097,6 +2098,11 @@ figure.effect-ming img {
 }
 .more-post-details {
     overflow: hidden;
+    margin: 0 0 10px;
+}
+.more-post-details a{
+  color: #fcd116;
+  font-weight: bold !important;
 }
 .effect-ming > figcaption {
     padding: 30px;
@@ -2166,7 +2172,7 @@ figure.effect-lexi figcaption{
     left: 0;
 }
 figure.effect-lexi:hover figcaption {
-    background: rgba(45, 45, 45, 0.3) none repeat scroll 0 0;
+    background: rgba(74, 42, 132, 0.43) none repeat scroll 0 0;
     left: 0;
     width: 100%;
 }
@@ -2213,7 +2219,7 @@ figure.effect-lexi h2 {
 .blog-posts-shortcode .post-title {
     font-size: 28px;
     line-height: 31px;
-    margin: 0 0 15px;
+    margin: 0 0 10px;
     width: 100%;
 }
 figure.effect-lexi p {
@@ -5881,6 +5887,29 @@ q {
 }
 .navbar-auto {
   margin-left: 30px;
+}
+.hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  padding: 3em 0 4em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.hero h1 {
+  font-size: 45px;
+  color: #fff;
+  font-weight: bold;
+}
+.hero.news {
+  background-image: url('../img/assets/news-hero.jpg');
+}
+.bold {
+  font-weight: bold !important;
+}
+.widget .post-thumbnail {
+  width: 25% !important;
 }
 @media screen and (max-width: 991px) {
   .main-menu {
