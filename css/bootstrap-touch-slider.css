@@ -18,7 +18,7 @@
     cursor: -webkit-grabbing;
 }
 .bs-slider .bs-slider-overlay.opacity07 {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .bs-slider .bs-slider-overlay {
     position: absolute;
@@ -221,7 +221,7 @@
     position: absolute;
     text-align: left;
     padding: 10px 85px;
-    
+
 }
 .slide-text h1 {
     -webkit-animation-delay: 0.7s;
@@ -354,7 +354,7 @@ a.btn-primary.tslr-btn:hover,
         line-height: 18px;
         margin-bottom: 10px;
     }
-    .slide-text  a.btn-default, 
+    .slide-text  a.btn-default,
     .slide-text  a.btn-primary {
         font-size: 10px;
         line-height: 10px;

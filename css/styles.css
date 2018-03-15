@@ -97,7 +97,7 @@ figure.effect-ming h2,
 .blog-posts-shortcode .post-title,
 .single-menu-item .price,
 .section-title{
-    font-family: 'Poppins';
+    font-family: 'Arial';
 }
 /*Font Family for content*/
 p,
@@ -1911,16 +1911,17 @@ figure.lift-thumbnail p {
 }
 /* Common style */
 .team-member-title {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     margin-top: 15px;
-    text-transform: uppercase;
-    margin-bottom: 8px;
+    /* text-transform: uppercase; */
+    margin-bottom: 0px;
+    color: #2e2e2e;
 }
 .team-member-position {
-    color: #888888;
-    font-size: 15px;
-    font-style: italic;
+    color: #6d28aa;
+    font-size: 18px;
+    font-weight: bold;
     line-height: 24px;
     margin-bottom: 10px;
 }
@@ -2840,18 +2841,20 @@ nav#filter-main-nav {
 }
 .tags-list a::before {
     border-radius: 50%;
-    content: "";
+    content: "»";
     height: 5px;
-    left: 10px;
+    left: 8px;
     position: absolute;
-    top: 16px;
     width: 5px;
+    color: #6d28aa;
+    background: none !important;
 }
 .tags-list a {
     background: none repeat scroll 0 0 rgb(234, 234, 234);
-    color: rgba(0, 0, 0, 0.7);
+    color: #6d28aa;
     padding: 6px 10px 6px 20px;
     position: relative;
+    font-weight: bold;
 }
 .tags-list > li {
     display: inline;
@@ -5902,14 +5905,67 @@ q {
   color: #fff;
   font-weight: bold;
 }
+.hero p {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
 .hero.news {
   background-image: url('../img/assets/news-hero.jpg');
+}
+.hero.details {
+  background-image: url('../img/assets/details-hero.jpg');
+}
+.hero.about {
+  background-image: url('../img/assets/about-hero.jpg');
+}
+.hero.contact {
+  background-image: url('../img/assets/contact-hero.jpg');
+}
+.hero.team {
+  background-image: url('../img/assets/team-hero.jpg');
+}
+.hero.funders {
+  background-image: url('../img/assets/funders-hero.jpg');
+}
+.hero.services {
+  background-image: url('../img/assets/services-hero.jpg');
 }
 .bold {
   font-weight: bold !important;
 }
 .widget .post-thumbnail {
   width: 25% !important;
+}
+.share-this-post {
+  display: flex;
+  align-items: center;
+}
+.card {
+  border-radius: 6px;
+  box-shadow: 1px 1px 10px 0px hsl(0, 0%, 73%);
+  padding: 1.5em 0;
+  line-height: 30px;
+}
+.card .date {
+  color: #fcd116;
+}
+.card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 32px;
+}
+.list {
+  list-style-type: circle;
+  line-height: 28px;
+}
+.list a {
+  color: #6a6a6a;
+}
+.list a:hover {
+  color: #7a3bb0;
+  text-decoration: underline;
 }
 @media screen and (max-width: 991px) {
   .main-menu {
