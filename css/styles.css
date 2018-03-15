@@ -114,7 +114,7 @@ blockquote,
 .daily-specials-shortcode .day-details-content h4,
 .amaezi_header_subtitle,
 .post-content p {
-    font-family: "Open Sans";
+    font-family: "Arial";
     font-weight: 300;
 }
 
@@ -5904,6 +5904,7 @@ q {
   font-size: 45px;
   color: #fff;
   font-weight: bold;
+  text-align: center;
 }
 .hero p {
   color: #fff;
@@ -5966,6 +5967,23 @@ q {
 .list a:hover {
   color: #7a3bb0;
   text-decoration: underline;
+}
+.purple-bg {
+  background: #6d28aa;
+}
+.white {
+  color: white;
+}
+.yellow {
+  font-size: 22px;
+  color: #fcd116;
+  font-weight: bold;
+}
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
 @media screen and (max-width: 991px) {
   .main-menu {
