@@ -5817,6 +5817,9 @@ a.viewdetails:hover,
 }
 
 /* Add new rules for this interval below */
+.main-content {
+  overflow-x: hidden;
+}
 .main-menu {
   position: absolute;
   z-index: 999;
@@ -5825,7 +5828,7 @@ a.viewdetails:hover,
 .main-menu::after {
   content: '';
   position: absolute;
-  width: 150%;
+  width: 100%;
   height: 60px;
   background: #dfb91c;
   z-index: -1;
